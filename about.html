@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mate+SC&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+
+<body style="background-color:rgb(6, 6, 24);text-align:center">
+    <section class="subheader">
+        <!-- Logo && Links -->
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="gg-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="projects.html"> PROJECTS </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="gg-menu" onclick="showMenu()"></i>
+        </nav>
+        <h1> - About Me - </h1>
+    </section>
+
+    <!-- ABOUT CONTENT -->
+    <!-- about section-->
+    <section class="about">
+        <div id="aboutArea">
+            <div class="row">
+                <div class="about-col">
+                    <h1> Hey, I'm Arius Nagpal. </h1>
+                    <p> I'm a self taught software developer in Atlanta, GA. <br>
+                        I have a passion for learning and UI/UX design along with dynamic & visceral user experiences.
+                        <br> I also am skilled in Photoshop & Illustrator.
+                        <br> <a href="contact.html">Let's create together.</a>
+                    </p>
+                </div>
+
+                <div class="about-col">
+                    <img src="images/Arius.PNG">
+                </div>
+
+            </div>
+            <!-- Amimation -->
+
+        </div>
+    </section>
+
+
+
+    <!-- footer -->
+    <section class="footer">
+        <p> Made by Arius Nagpal</p>
+    </section>
+
+    <!-- Javascript -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        };
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        };
+    </script>
+</body>
+
+</html>

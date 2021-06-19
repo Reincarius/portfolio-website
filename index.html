@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reincarius</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mate+SC&family=Staatliches&display=swap"
+        rel="stylesheet">
+
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+    <!-- css animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <section class="home-header">
+        <!-- Logo && Links -->
+        <nav>
+            <a href="index.html"><img src=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="gg-close" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT </a></li>
+                    <li><a href="projects.html"> PROJECTS </a></li>
+                    <li><a href="contact.html"> CONTACT </a></li>
+                </ul>
+            </div>
+            <i class="gg-menu" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box" id="homeArea">
+            <h1 class="animate__animated animate__bounceInDown">Hello World!</h1>
+            <p>I'm Arius <br> Welcome to my portfolio page</p>
+            <a href="projects.html" class="more-btn"> View My Work <i class="gg-chevron-double-down-r"></i> </a>
+        </div>
+
+    </section>
+
+
+
+
+    <!-- projects section-->
+    <section class="projects">
+        <div id="projectArea" class="projects">
+            <h1> </h1>
+        </div>
+    </section>
+
+    <!-- contact section-->
+    <section class="contact">
+        <div id="contactArea" class="contact">
+
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <section class="footer">
+        <p> Made by Arius Nagpal</p>
+    </section>
+
+
+
+    <!-- Javascript -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        };
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        };
+    </script>
+
+</body>
+
+</html>
