@@ -219,7 +219,21 @@ html, body {
 }
 
 /* Project */
+.projectArea{
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(16, 35, 110, 0.7));
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+}
 
+.project{
+  width: 80%;
+  margin:auto;
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 .project h2{
   color: #6b51a0;
 }
