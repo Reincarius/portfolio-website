@@ -220,7 +220,7 @@ html, body {
 
 /* Project */
 .projectArea{
-  height: 50vh;
+  height: 100%;
   width: 100%;
   background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(16, 35, 110, 0.7));
   background-position: center;
