@@ -6,6 +6,14 @@
   font-family: 'Staatliches', cursive;
 }
 
+body{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+}
+
 /* HEADER */
 .home-header {
   min-height: 100vh;
@@ -98,11 +106,16 @@ nav .fa {
   text-decoration: none;
   color: #c5c3c9;
   border: 1px solid #c5c3c9;
-  padding: 12px 34px;
+  padding: 12px 32px;
   font-size: 20px;
   background: transparent;
-  position: relative;
+  position: center;
   cursor: pointer;
+}
+
+.gg-chevron-double-down-r{
+  position: relative;
+  margin-left: 37px;
 }
 
 .more-btn:hover {
@@ -239,149 +252,38 @@ html, body {
 }
 
 /* CONTACT ME */
-#fcf-form {
-  display:block;
+form{
+  margin-top: 50px;
+  transition: all 2s ease-in-out;
 }
 
-.fcf-body {
-  margin: 0;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #ffffff;
-  text-align: left;
-  background-color: rgb(6, 6, 24);
-  padding: 100px;
-  padding-bottom: 10px;
-  border: 1px solid rgb(6, 6, 24);
-  border-radius: 0.25rem;
-  max-width: 100%;
-}
-
-.fcf-form-group {
-  margin-bottom: 1rem;
-}
-
-.fcf-input-group {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  width: 100%;
-}
-
-.fcf-form-control {
-  display: block;
-  width: 100%;
-  height: calc(1.5em + 0.75rem + 2px);
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #ffffff;
-  background-color: rgb(6, 6, 24);
-  background-clip: padding-box;
-  border: 1px solid #ced4da;
+.form-control{
+  width: 600px;
+  background: transparent;
+  border: none;
   outline: none;
-  border-radius: 0.25rem;
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  border-bottom: 1px solid rgb(171, 150, 221);
+  color: rgb(205, 192, 243);
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
-.fcf-form-control:focus {
-  border: 1px solid #313131;
+input{
+  height: 45px;
 }
 
-select.fcf-form-control[size], select.fcf-form-control[multiple] {
-  height: auto;
+form.submit{
+  background: #bc8cfa;
+  border-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 50px;
+  height: 50px;
+  margin-top: 20px;
 }
 
-textarea.fcf-form-control {
-  font-family: -apple-system, Arial, sans-serif;
-  height: auto;
-}
-
-label.fcf-label {
-  display: inline-block;
-  margin-bottom: 0.5rem;
-  color: white;
-}
-
-.fcf-btn {
-  display: inline-block;
-  font-weight: 400;
-  color: #212529;
-  text-align: center;
-  vertical-align: middle;
+form .submit:hover{
+  background-color: #7f4dc2;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  background-color: transparent;
-  border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  border-radius: 0.25rem;
-  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
-
-@media (prefers-reduced-motion: reduce) {
-  .fcf-btn {
-      transition: none;
-  }
-}
-
-.fcf-btn:hover {
-  color: #212529;
-  text-decoration: none;
-}
-
-.fcf-btn:focus, .fcf-btn.focus {
-  outline: 0;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.fcf-btn-primary {
-  color: #fff;
-  background-color: rgb(120, 133, 202);
-  border-color: rgb(120, 133, 202);
-}
-
-.fcf-btn-primary:hover {
-  color: #fff;
-  background-color: rgb(104, 120, 201);
-  border-color: rgbrgb(104, 120, 201);
-}
-
-.fcf-btn-primary:focus, .fcf-btn-primary.focus {
-  color: #fff;
-  background-color: rgb(120, 133, 202);
-  border-color: rgb(120, 133, 202);
-  box-shadow: 0 0 0 0.2rem rgb(120, 133, 202);
-}
-
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
-  padding: 0.5rem 1rem;
-  font-size: 1.25rem;
-  line-height: 1.5;
-  border-radius: 0.3rem;
-}
-
-.fcf-btn-block {
-  display: block;
-  width: 100%;
-}
-
-.fcf-btn-block+.fcf-btn-block {
-  margin-top: 0.5rem;
-}
-
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
-  width: 100%;
-}
-
-
