@@ -98,7 +98,17 @@ nav .fa {
 .text-box p {
   margin: 10px 0 40px;
   font-size: 40px;
-  color: #c5c3c9;
+  color: transparent;
+  -webkit-text-stroke: 1px #c5c3c9;
+  background: url(images/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 55s linear infinite;
+}
+@keyframes back{
+  100%{
+    background-position: 2000px 0;
+  }
 }
 
 .more-btn {
@@ -223,43 +233,42 @@ html, body {
 }
 
 .about h1{ 
-  color: #6b51a0;
+  color:rgb(124, 134, 182);
   padding: 0;
   font-size: large;
 
 }
 
 .about p{ 
-  color: #6b51a0;
+  color:rgb(124, 134, 182);
   padding: 20px 0 25px;
   font-size: large;
 
 }
 
 /* Project */
-.projectArea{
-  height: 100%;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(16, 35, 110, 0.7));
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-}
-
-.project img{
-  width: auto;
-  height: auto;
-}
 
 .project{
-  width: 80%;
-  margin:auto;
-  padding-top: 20px;
-  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-top: pointer;
 }
-.project h2{
-  color: #6b51a0;
+
+.project-col {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
 }
+.project-col img{
+  width: 50%;
+  border-radius: 10px;
+}
+
+.info p, h2{
+  color:rgb(124, 134, 182);
+  font-weight: 600;
+}
+
 
 /* CONTACT ME */
 form{
